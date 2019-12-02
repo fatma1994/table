@@ -15,9 +15,9 @@ class CreateCoursTable extends Migration
     {
         Schema::create('cours', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('teacher_id')->nullable(true);
-            $table->unsignedInteger('Matiere_id')->nullable(true);
-            $table->unsignedInteger('Classe_id')->nullable(true);
+            $table->unsignedInteger('teacher_id');
+            $table->unsignedInteger('Matiere_id');
+            $table->unsignedInteger('Classe_id');
             $table->datetime('heure-debut');
             $table->datetime('heure-fin');
              $table->string('etat');

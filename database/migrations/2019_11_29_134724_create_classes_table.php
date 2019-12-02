@@ -15,8 +15,8 @@ class CreateClassesTable extends Migration
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->bigIncrements('id');
-             $table->unsignedInteger('Niveau_id')->mullable(true);
-               $table->unsignedInteger('Serie_id')->mullable(true);
+             $table->unsignedInteger('Niveau_id')->unique();
+               $table->unsignedInteger('Serie_id')->unique();
             $table->timestamps();
         });
     }

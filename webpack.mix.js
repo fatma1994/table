@@ -11,7 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js','resources/js/boostrap.js','resources/js/custom.js','resources/js/jquery.collapsible.min.js','resources/js/jquery.js','resources/js/masonry.pkgd.min,js','resources/js/swiper.js',
-	'resources/js/swiper.min.js','public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .styles(['resources/css/boostrap.css','resources/css/boostrap.min.css','resources/css/elegant-font.css','resources/css/font-awesome.css','resources/css/font-awesome.min.css','resources/css/swiper.css','resources/css/swiper.min.css','resources/css/themify-icons.css','resources/css/style.css'],'public/css/all.css');
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');

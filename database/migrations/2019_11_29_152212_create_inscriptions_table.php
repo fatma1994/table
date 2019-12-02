@@ -15,9 +15,9 @@ class CreateInscriptionsTable extends Migration
     {
         Schema::create('inscriptions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->date('annee_academique');
-            $table->unsignedInteger('Eleve_id')->nullable(true);
-            $table->unsignedInteger('Classe_id')->nullable(true);
+            $table->date('annee_academique')->unique();
+            $table->unsignedInteger('Eleve_id');
+            $table->unsignedInteger('Classe_id')->unique();
             $table->unsignedInteger('frais_inscription');
             $table->datetime('date_inscrit');
             $table->timestamps();

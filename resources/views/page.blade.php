@@ -1,4 +1,4 @@
-@extends("index")
+@extends("home")
 
 @section("contenu")
         <div class="nav-bar">
@@ -13,8 +13,8 @@
                         <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
                             <nav class="site-navigation flex justify-content-end align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                    <li><a href="#">Accueil</a></li>
-                                    <li><a href="administration.html">Administration</a></li>
+                                    <li><a href="articles">Accueil</a></li>
+                                    <li><a href="articles">Administration</a></li>
                                     <li><a href="infos.html">Infos</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -57,5 +57,6 @@
             </div><!-- .container -->
         </div><!-- .hero-content-hero-content-overlay -->
     </div><!-- .hero-content -->
+
 
  @endsection

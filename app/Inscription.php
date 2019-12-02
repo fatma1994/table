@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Inscription extends Model
 {
 	protected $guarded=[];
-     public funtiion Classe(){
+     public function Classes(){
     	return $this->hasMany("App\Classe");} 
-    	public funtiion Eleve(){
+    	public function Eleves(){
     	return $this->hasMany("App\Eleve");}
 }

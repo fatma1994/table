@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Serie extends Model
 {
 	protected $guarded=[];
-     public funtiion Classe(){
+
+     public function classes(){
     	return $this->hasMany("App\Classe");}
 }

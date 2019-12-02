@@ -8,16 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Classe extends Model
 
 {
-    public funtiion Niveau(){
-    	 return $this->belongsToMany('App\Niveau');
+	protected $guarded=[];
+	
+    public function Niveau(){
+    	 return $this->belongsTo('App\Niveau');
 
     }
-    public funtiion Serie(){
-    	 return $this->belongsToMany('App\Serie');
+    public function Serie(){
+    	 return $this->belongsTo('App\Serie');
 
     }
-     public funtiion Inscription(){
-    	 return $this->belongsToMany('App\Inscription');
+     public function Inscription(){
+    	 return $this->belongsTo('App\Inscription');
 
     }
 }

@@ -26,3 +26,7 @@ Route::get('/page', function () {
 });
 
 Route::get('/Eleve','EleveController@sindex');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

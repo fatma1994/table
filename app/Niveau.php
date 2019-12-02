@@ -8,7 +8,7 @@ class Niveau extends Model
 {
 	protected $guarded=[];
 
-	 public funtiion Classe(){
+	 public function Classes(){
     	return $this->hasMany("App\Classe");} 
     //
 }

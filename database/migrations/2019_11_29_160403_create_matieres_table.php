@@ -15,7 +15,7 @@ class CreateMatieresTable extends Migration
     {
         Schema::create('matieres', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('libelle');
+            $table->string('libelle')->unique();
             $table->Integer('coefficient');
             $table->timestamps();
         });
