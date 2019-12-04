@@ -15,6 +15,7 @@ class ElevesController extends Controller
     public function index()
     {
         $eleve=eleve::All();
+        $eleve=\App\Eleve::orderBy('created_at','Desc')->get();
         return view('eleves.index',compact('eleve'));
     }
 
@@ -25,7 +26,7 @@ class ElevesController extends Controller
      */
     public function create()
     {
-        //return view('eleves.create');
+        return view('eleves.create');
     }
 
     /**
@@ -36,8 +37,20 @@ class ElevesController extends Controller
      */
     public function store(Request $request)
     {
-        $elev=$request->input('matricule');
-        eleves::create(['name'=>$elev]);
+      $data=$request->validate([
+        'matricule'=>'required|min:4',
+        'nom'=>'required',
+         'prenom'=>'required'
+      ]);
+
+
+        $elev=new eleve();
+         $elev->matricule=$request->input('matricule');
+          $elev->nom=$request->input('nom');
+           $elev->prenom=$request->input('prenom');
+        //eleves::create(['name'=>$elev]);
+          $elev->save();
+          return redirect('/');
     }
 
     /**
@@ -59,7 +72,8 @@ class ElevesController extends Controller
      */
     public function edit($id)
     {
-        //
+         $eleve=\App\Eleve::find($id);
+        return view('eleves.edit',compact('eleve'));
     }
 
     /**
@@ -71,7 +85,15 @@ class ElevesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         $eleve=\App\Eleve::find($id);
+         if($eleve){
+            $eleve->update([
+                'matricule'=>$request->input('matricule'),
+                'nom'=>$request->input('nom'),
+                'prenom'=>$request->input('prenom'),
+            ]);
+         }
+         return redirect()->back();
     }
 
     /**
