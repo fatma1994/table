@@ -1,8 +1,12 @@
-@extends("index")
+@extends('index')
+@section('contenu')
 
-@section("contenu")
- <div class="container">
-       
-</div>
+  
 
- @endsection
+
+
+
+
+
+
+@endsetion

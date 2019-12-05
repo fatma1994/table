@@ -19,7 +19,7 @@ class CreateInscriptionsTable extends Migration
             $table->unsignedInteger('Eleve_id');
             $table->unsignedInteger('Classe_id')->unique();
             $table->unsignedInteger('frais_inscription');
-            $table->datetime('date_inscrit');
+            $table->date('date_inscrit');
             $table->timestamps();
         });
     }

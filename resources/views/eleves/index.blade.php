@@ -4,6 +4,7 @@
  <div class="container">
  
  	<table class="table table-stripe">
+ 		<div><p><a href="{{route('eleves.create')}}">{{('Enrengistrer d\un eleve')}}></a></p></div>
  		<tr>
  	  <th>#</th>
  	  <th>matricule</th>

@@ -24,7 +24,6 @@
                             <div class="header-bar-email d-flex align-items-center">
                                 <i class="fa fa-envelope"></i><a href="#">fallougalass@gmail.com</a>
                             </div><!-- .header-bar-email -->
-
                             <div class="header-bar-text lg-flex align-items-center">
                                 <p><i class="fa fa-phone"></i>221-77-641-84-90 </p>
                             </div><!-- .header-bar-text -->
@@ -44,8 +43,8 @@
                 </div><!-- .container-fluid -->
             </div> 
 
-
-         
+        
+     
 
              <div class="nav-bar">
                 <div class="container">
@@ -81,37 +80,7 @@
                 </div><!-- .container -->
             </div><!-- .nav-bar -->
         </header><!-- .site-header -->
-
-        <div class="hero-content-overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
-                            <header class="entry-header">
-                                <h4>L'education notre priorite</h4>
-                                <h1>TRAVAIL-DICIPLINE-REUSSITE</h1>
-                            </header><!-- .entry-header -->
-
-                            
-
-                            <footer class="entry-footer read-more">
-                                <h5>Copyright sokhnafatma@!</h5>
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .hero-content-wrap -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .hero-content-hero-content-overlay -->
-    </div><!-- .hero-content --top-header-bar -->
-        
-                            
-
-                         
-         
-       
-  
-    
-       
+</div>
    
 <footer class="site-footer">
     <div class="footer-widgets">

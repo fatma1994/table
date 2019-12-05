@@ -6,14 +6,18 @@
 <div class="container">
 	<div><p><a href="{{route('eleves.index')}}",{{__('Enregistrement d\un eleve')}}></a></p></div>
 
-		<form action="{{route(eleves_create)}}" method="post">
+		<form action="{{route(eleves.store)}}" method="post">
 	@csrf
-	<div class="row">
+	<div>
 		<input type="text" name="matricule" class="form-control">
-		<input type="text" name="nom" class="form-control">
-		<input type="text" name="prenom" class="form-control">
 	</div>
-	<div class="row">
+	<div>
+		<input type="text" name="nom" class="form-control">
+	</div>
+	<div>
+		<input type="text" name="prenom" class="form-control">
+    </div>
+	<div>
 		<button class="btn btn-primary">Enregistrer</button>
 	</div>
 </form>
