@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home',compact('eleve'));
+        return view('home',compact('home'));
     }
 }

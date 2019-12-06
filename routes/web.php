@@ -15,23 +15,36 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/page', function () {
-  return view('page');
+Route::get('/administration', function () {
+  return view('administration');
 });
+Route::get('/eleve', function () {
+  return view('eleve');
+});
+Route::post('/eleve', function () {
+  return view('eleve');
+});
+Route::get('/inscription', function () {
+  return view('inscription');
+});
+
+//Route::get('/home', function () {
+//  return view('home');
+//});
 //Route::get('/', function () {
    // return view('home');
 //})
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
 
 //Route::get("/elev","ElevesController@create");
 
 //Auth::routes();
 
 
-Route::resource('Eleve','ElevesController');
-Route::get('/Eleve/edit/{id}','ElevesController@edit')->name('eleves_edit');
-Route::get('/Eleve/cr','ElevesController@create')->name('eleves.create');
-Route::patch("/Eleve/edit/{id}","ElevesController@update")->name('eleves_update');
+Route::resource('/Eleve','ElevesController');
+Route::get('/eleve/edit/{id}','ElevesController@edit')->name('eleves_edit');
+Route::get('/eleve/cr','ElevesController@create');
+Route::patch("/eleve/edit/{id}","ElevesController@update")->name('eleves_update');
 
 
 Route::resource('Inscription','InscriptionsController');

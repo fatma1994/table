@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-   
-     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+  <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/all.css')}}">
     
 </head>
@@ -56,9 +55,10 @@
                             <nav class="site-navigation flex justify-content-end align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
                                     <li><a href="#">Accueil</a></li>
-                                    <li><a href="administration.html">Administration</a></li>
-                                    <li><a href="infos.html">Infos</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{'administration'}}">Administration</a></li>
+                                    <li><a href="{{'pedagogique'}}">Pedagogique</a></li>
+                                    <li><a href="{{'infos'}}">Infos</a></li>
+                                    <li><a href="{{'contact'}}">Contact</a></li>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
@@ -77,7 +77,8 @@
                 </div><!-- .container -->
             </div><!-- .nav-bar -->
         </header><!-- .site-header -->
- <div class="hero-content-overlay">
+
+        <div class="hero-content-overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -97,8 +98,12 @@
                 </div><!-- .row -->
             </div><!-- .container -->
         </div><!-- .hero-content-hero-content-overlay -->
-    </di>
+    </div><!-- .hero-content -->
 
+                   
+                
+
+   
 <footer class="site-footer">
     <div class="footer-widgets">
         <div class="container">
@@ -161,8 +166,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> lycee
    <marquee><h5>Bienvenu au lycee d' excellence!!!</h5></marquee>
 </footer><!-- .site-footer -->
 
-  -->
-<script type='text/javascript' src="{{asset('js/app.js')}}"></script>
+
+
+
+
+    
+
+ <script type='text/javascript' src="{{asset('js/app.js')}}"></script>
 
 
 </body>

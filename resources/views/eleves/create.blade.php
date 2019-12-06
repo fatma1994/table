@@ -1,12 +1,14 @@
-@if($errors->any())
-	@foreach($errors->all() as error)
+{{--@ if($errors->any())
+	@ foreach($errors->all() as error)
 	   <div class="alert alert-danger">{{$error}}</div>
-	@endforeach
-@endif
-<div class="container">
-	<div><p><a href="{{route('eleves.index')}}",{{__('Enregistrement d\un eleve')}}></a></p></div>
+	@ endforeach
+@ endif--}}
 
-		<form action="{{route(eleves.store)}}" method="post">
+
+<div class="container">
+	<div><h1>{{__('Enregistrement d\un eleve')}}</1></div>
+
+		<form action="" method="post">
 	@csrf
 	<div>
 		<input type="text" name="matricule" class="form-control">
